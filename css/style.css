@@ -128,7 +128,7 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.4);
 }
 .banner .form-hana .box-form{
-    padding: 31px;
+    padding: 31px 0;
 }
 .banner .form-hana .box-form .ct_form_hana{
     width: 92%;
@@ -213,10 +213,6 @@ a:hover{
 .banner .form-hana .right .form select.date_to{
     width: 140px !important;
 }
-.banner .form-hana .right .form select.hour_to{
-    width: 100px !important;
-    margin-left: 20px;
-}
 .banner .form-hana .right .form select{
   background: rgba(0, 0, 0, 0) !important;
     color: white !important;
@@ -234,7 +230,7 @@ a:hover{
     margin-bottom: 0.5rem !important;
 }
 .banner .form-hana .right .form form .form-group .form-control{
-    padding: 0 !important;
+    padding: 0 ;
 }
 .banner .form-hana .button_form .search_hana {
     width: 100%;
@@ -246,6 +242,44 @@ a:hover{
     line-height: 22px;
     color: #E5C300;
     padding: 14px;
+}
+.banner .form-hana .date_form {
+    border: unset;
+    background: unset;
+    color: white;
+    width: 125px ;
+}
+.banner .form-hana .date_form:focus {
+    outline: none;
+}
+.banner .form-hana .fa-angle-down  {
+    margin-top: 5px;
+    font-weight: 600;
+}
+.banner .form-hana .right .form select.hour_to{
+    width: 100px !important;
+    padding-left: 20px !important;
+}
+
+
+
+/*=======================================*/
+.feature{
+    padding-top: 80px;
+    font-family: "Roboto";
+    width: 79%;
+}
+.feature h5{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    color: #777572;
+}
+.feature .list-feature{
+    padding-top: 34px;
+}
+.feature .list-feature .img_feature{
+    padding: 0 7px;
 }
 
 /* ============================================ Responsive ====================================== */
@@ -304,6 +338,9 @@ a:hover{
 
 
 @media (max-width: 992px) {
+    .banner {
+        background-position: center;
+    }
     .banner .form-hana .left{
         width: 100%;
     }
@@ -349,11 +386,23 @@ a:hover{
         font-size: 42px;
     }
     .banner .form-hana .box-form .ct_form_hana .boxcar {
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
     }
     .banner .form-hana .box-form .ct_form_hana .boxcar {
         margin: 15px 0;
+    }
+    .banner .form-hana .box-form .ct_form_hana .car h5{
+        font-size: 18px;
+    }
+    .feature {
+        padding-top: 50px;
+    }
+    .feature .list-feature {
+        padding-top: 20px;
+    }
+    .feature {
+        width: 90%;
     }
 }
 
@@ -362,15 +411,81 @@ a:hover{
 }
 
 @media (max-width: 576px) {
-
+    .banner .box-banner .title h1{
+        font-size: 35px;
+    }
+    .banner .form-hana .right .form select.province{
+        width: 110px !important
+    }
+    .banner .form-hana .right .form select.distinct{
+        width: 125px !important;
+    }
+    .banner .form-hana .date_form{
+        width: 110px !important;
+    }
+    .header .sub-header .logo{
+        min-width: 115px;
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+    .banner .form-hana .right .form select.hour_to{
+        padding-left: 40px !important;
+    }
+    .icon_hour_mobi{
+        margin-top: -10px !important;
+    }
 }
 
 @media (max-width: 500px) {
+    .banner .form-hana .box-form{
+        padding: 5px 17px;
+    }
+    .banner .box-banner .title h1{
+        font-size: 33px;
+    }
+    .banner .form-hana .box-form .ct_form_hana .boxcar {
+        width: 50px;
+        height: 50px;
+    }
+    .banner .form-hana .box-form .ct_form_hana .box1 img {
+        margin-top: 17px;
+    }
+    .banner .form-hana .box-form .ct_form_hana .box2 img {
+        margin-top: 0;
+    }
+    .banner .form-hana .box-form .ct_form_hana .car h5 {
+        font-size: 14px;
+    }
+    .banner .form-hana .box-form .ct_form_hana .boxcar {
+        margin: 10px 0;
+    }
+    .banner .form-hana .right .form select{
+        font-size: 14px;
+    }
+    .banner .form-hana .right .form .fa-map-marker{
+        font-size: 18px !important;
+    }
+    .banner .form-hana .right .form form .form-group{
+        margin-right: 15px;
+    }
+    .banner .form-hana .button_form .search_hana{
+        font-size: 16px;
+        padding: 7px;
+    }
+    .banner .box-banner .title{
+        padding: 20px 0 0 0;
+    }
 
 }
 @media (max-width: 450px) {
 
 }
 @media (max-width: 400px) {
-
+    .icon_hour_mobi{
+       padding-left: 15px;
+    }
 }

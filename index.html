@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/fontawesome-free-5.12.0-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="shortcut icon" type="image/png" href="img/web/home/logo.png"/>
 </head>
 
 <body>
@@ -109,20 +111,20 @@
                                             <p class="name_search">Điểm đi</p>
                                             <div class="form-row align-items-center">
                                                 <i class="fa fa-map-marker"></i>
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-3">
                                                     <select class="form-control province">
                                                         <option selected>Thành phố</option>
                                                         <option>...</option>
 
                                                     </select>
                                                 </div>
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-3">
                                                     <select class="form-control distinct">
                                                         <option selected>Quận , Huyện</option>
                                                         <option>...</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-3">
                                                     <select class="form-control town">
                                                         <option selected>Xã , Thị trấn</option>
                                                         <option>...</option>
@@ -132,20 +134,20 @@
                                             <p class="name_search">Điểm đến</p>
                                             <div class="form-row align-items-center">
                                                 <i class="fa fa-map-marker"></i>
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-3">
                                                     <select class="form-control province">
                                                         <option selected>Thành phố</option>
                                                         <option>...</option>
 
                                                     </select>
                                                 </div>
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-3">
                                                     <select class="form-control distinct">
                                                         <option selected>Quận , Huyện</option>
                                                         <option>...</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-3">
                                                     <select class="form-control town">
                                                         <option selected>Xã , Thị trấn</option>
                                                         <option>...</option>
@@ -154,18 +156,17 @@
                                             </div>
                                             <p class="name_search">Thời gian đi</p>
                                             <div class="form-row align-items-center mx-0">
-                                                <div class="form-group col-md-3">
-                                                    <select class="form-control date_to">
-                                                        <option selected>17/08/2020</option>
-
-                                                    </select>
+                                                <div class="form-group col-3 d-flex">
+                                                    <input class="date_form" type="text" id="datepicker">
+                                                    <i class="fa fa-angle-down text-white" aria-hidden="true"></i>
                                                 </div>
-                                                <div class="form-group col-md-3">
+                                                <div class="form-group col-3">
                                                     <select class="form-control hour_to">
                                                         <option selected>20 : 00</option>
                                                         <option>...</option>
                                                     </select>
                                                 </div>
+                                                <i class="fa fa-angle-down text-white d-sm-none d-block icon_hour_mobi" aria-hidden="true"></i>
                                             </div>
                                             <div class="button_form">
                                                 <button type="submit" class="btn btn-primary search_hana w-100">
@@ -182,15 +183,47 @@
             </div>
         </div>
     </section>
+    <div class="clearfix"></div>
+    <section>
+        <div class="container-fluid px-0">
+            <div class="feature m-auto">
+                <div class="m-auto">
+                    <h5>TÍNH NĂNG NỔI BẬT</h5>
+                </div>
+                <div class="list-feature m-auto row">
+                    <div class="img_feature col-lg-3 col-sm-6 mb-3 mb-lg-0">
+                        <img class="w-100" src="img/web/home/feature4.png" alt="tinh nang noi bat cua hana">
+                    </div>
+                    <div class="img_feature col-lg-3 col-sm-6 mb-3 mb-lg-0">
+                        <img class="w-100" src="img/web/home/feature3.png" alt="tinh nang noi bat cua hana">
+                    </div>
+                    <div class="img_feature col-lg-3 col-sm-6 mb-3 mb-lg-0">
+                        <img class="w-100" src="img/web/home/feature2.png" alt="tinh nang noi bat cua hana">
+                    </div>
+                    <div class="img_feature col-lg-3 col-sm-6 mb-3 mb-lg-0">
+                        <img class="w-100" src="img/web/home/feature1.png" alt="tinh nang noi bat cua hana">
+                    </div>
+                </div>
+            </div>
+        </div>
 </main>
 
-<footer>
+<footer>`
 
 </footer>
 
 <script src="plugins/js/jquery-3.4.1.slim.min.js"></script>
 <script src="plugins/js/jquery-3.2.1.min.js"></script>
 <script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script>
+    $( function() {
+        $( "#datepicker" ).datepicker({
+            dateFormat: 'dd-mm-yy',
+        });
+        $( "#datepicker" ).datepicker().datepicker("setDate", new Date());
+    } );
+</script>
 </body>
 
 </html>
