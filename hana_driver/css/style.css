@@ -34,6 +34,12 @@ header{
 .hambuger{
     font-size: 30px !important;
 }
+.text-blue{
+    color: #007bff !important;
+}
+.bg-yellow{
+    background-color: #DDDF3C !important;
+}
 a:hover{
     text-decoration: none !important;
 }
@@ -82,8 +88,73 @@ a:hover{
 .header .sub-header .logo{
     max-width: 130px;
 }
+.header .sub-header .logo label.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+.header .sub-header .logo .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.header .sub-header .logo .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#6E6E6E;
+    transition: .4s;
+}
+
+.header .sub-header .logo .switch .slider:before { 
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+.header .sub-header .logo .switch input:checked + .slider {
+    background-color:#47cf73;
+}
+  
+.header .sub-header .logo .switch input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.header .sub-header .logo .switch  .slider.round {
+    border-radius: 34px;
+}
+
+.header .sub-header .logo .switch  .slider.round:before {
+    border-radius: 50%;
+}
+.header .sub-header .logo .fa-bolt {
+    font-size: 21px;
+    margin-top: -7px;
+    margin-right: 10px;
+}
+#changePositionLive .modal{
+    width: 90%;
+    margin: auto;
+}
+#changePositionLive h5.modal-title{
+    font-size: 17px;
+}
+.cur-position {
+    border: 1px solid lightgrey;
+}
 .header .sub-header{
-    padding: 12px 0;
+    padding: 8px 0;
 }
 .header .sub-header .contact-header{
     font-size: 15px;
